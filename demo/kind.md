@@ -23,6 +23,8 @@ Click the **Create Codespace** button a give it a few minutes for the container 
 The Codespace has all the tools you need to get started. All you need to do is simply open the Terminal in VS Code and run the following command:
 
 ```bash
+GOBIN=/workspaces/carbon-aware-keda-operator/bin go install sigs.k8s.io/controller-tools/cmd/controller-gen@latest
+
 make kind-deploy-prom IMG=carbon-aware-keda-operator:v1
 ```
 
